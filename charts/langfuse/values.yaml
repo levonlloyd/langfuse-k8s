@@ -496,6 +496,10 @@ clickhouse:
   # -- Enable ClickHouse deployment (via Bitnami Helm Chart). If you want to use an external Clickhouse server (or a managed one), set this to false
   deploy: true
 
+  # Bump memory
+  persistence:
+    size: 32Gi
+
   # -- ClickHouse host to connect to. If clickhouse.deploy is true, this will be set automatically based on the release name.
   host: ""
   # -- ClickHouse HTTP port to connect to.
